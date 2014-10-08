@@ -1,0 +1,3974 @@
+  [1m[36m (128.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (249.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreatePosts (20141008045520)
+  [1m[35m (112.8ms)[0m  CREATE TABLE `posts` (`id` int(11) auto_increment PRIMARY KEY, `title` varchar(255), `body` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141008045520')
+  [1m[36m (38.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:05:48 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/railties-4.1.1/lib/rails/templates/rails/welcome/index.html.erb (31.8ms)
+Completed 200 OK in 104ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 12:05:56 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0xba02520>:0xba01288>):
+    1: <h1>Posts#new</h1>
+    2: <%= form_for :post, url: posts_path do |f| %>
+    3:   <p>
+    4:     <%= f.label :Judul %>
+    5:     <%= f.text_field :title %>
+  app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb__706213148_96751590'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.9ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 12:09:00 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (38.8ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0xbc8de48>:0xbc8d830>):
+    1: <h1>Posts#new</h1>
+    2: <%= form_for :post, url: posts_path do |f| %>
+    3:   <p>
+    4:     <%= f.label :Judul %>
+    5:     <%= f.text_field :title %>
+  app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb__706213148_96751590'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 12:09:01 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0xbc8de48>:0xbbba660>):
+    1: <h1>Posts#new</h1>
+    2: <%= form_for :post, url: posts_path do |f| %>
+    3:   <p>
+    4:     <%= f.label :Judul %>
+    5:     <%= f.text_field :title %>
+  app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb__706213148_96751590'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 12:10:04 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (45.5ms)
+Completed 500 Internal Server Error in 118ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0x9ffa394>:0xaccf948>):
+    1: <h1>Posts#new</h1>
+    2: <%= form_for :post, url: posts_path do |f| %>
+    3:   <p>
+    4:     <%= f.label :Judul %>
+    5:     <%= f.text_field :title %>
+  app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb__860674815_86365290'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 12:11:05 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (38.0ms)
+Completed 500 Internal Server Error in 111ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"post"} missing required keys: [:id]):
+    1: <h1>Posts#new</h1>
+    2: <%= form_for :post, url: post_path do |f| %>
+    3:   <p>
+    4:     <%= f.label :Judul %>
+    5:     <%= f.text_field :title %>
+  app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb___942096050_93053430'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.6ms)
+
+
+Started GET "/posts/" for 127.0.0.1 at 2014-10-08 12:12:13 +0700
+
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (44.1ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (75.9ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 12:12:17 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0xb4e7e3c>:0xb4e72e8>):
+    1: <h1>Posts#new</h1>
+    2: <%= form_for :post, url: posts_path do |f| %>
+    3:   <p>
+    4:     <%= f.label :Judul %>
+    5:     <%= f.text_field :title %>
+  app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb___942096050_94842400'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.9ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 12:14:26 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (96.4ms)
+Completed 200 OK in 1294ms (Views: 1262.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-10-08 12:14:28 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:14:28 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:28 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:28 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:28 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:28 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:28 +0700
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 12:14:50 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 112ms (Views: 110.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-10-08 12:14:50 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:14:50 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:50 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:50 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:50 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:50 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:50 +0700
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 12:14:51 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-10-08 12:14:51 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:51 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:51 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:14:51 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:51 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:52 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:14:52 +0700
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 12:16:09 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 65ms (Views: 64.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-10-08 12:16:09 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:16:09 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:16:09 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:16:09 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:16:09 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:16:09 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:16:09 +0700
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 12:16:54 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 79ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-10-08 12:16:54 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:16:54 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:16:54 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:16:54 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:16:54 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:16:54 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:16:54 +0700
+
+
+Started POST "/posts" for 127.0.0.1 at 2014-10-08 12:17:31 +0700
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9dQPIDqx6FL/4RxWsSKEtUphv5P6UAebWMQgE8pCRvc=", "post"=>{"title"=>"OP", "body"=>"OnePiece"}, "commit"=>"Save Post"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `posts` (`body`, `created_at`, `title`, `updated_at`) VALUES ('OnePiece', '2014-10-08 05:17:31', 'OP', '2014-10-08 05:17:31')[0m
+  [1m[35m (69.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 93ms (ActiveRecord: 71.7ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-08 12:17:31 +0700
+
+AbstractController::ActionNotFound (The action 'show' could not be found for PostsController):
+  actionpack (4.1.1) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-08 12:18:06 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 10ms
+
+ActionView::MissingTemplate (Missing template posts/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/user/RubymineProjects/app/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-08 12:18:36 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1
+  Rendered posts/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 62ms (Views: 59.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2014-10-08 12:18:36 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:18:36 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:18:36 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:18:36 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:18:36 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:18:36 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:18:36 +0700
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 12:28:57 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (80.9ms)
+Completed 200 OK in 1722ms (Views: 1689.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:29:00 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:29:00 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:29:00 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:29:00 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:29:00 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:29:00 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:29:00 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:29:00 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:29:03 +0700
+
+ActionController::RoutingError (uninitialized constant PostController):
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.2ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:29:25 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 118ms (Views: 112.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:29:25 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:29:25 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:29:25 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:29:25 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:29:25 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:29:26 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:29:26 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:29:26 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:30:06 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 122ms (Views: 120.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:30:06 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:30:06 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:30:06 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:06 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:06 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:06 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:06 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:06 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:30:08 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 103ms (Views: 101.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:30:08 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:30:08 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:30:08 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:08 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:08 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:08 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:08 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:08 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:30:09 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 87ms (Views: 85.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:30:09 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:30:09 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:30:09 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:09 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:09 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:09 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:09 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:30:10 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:31:49 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:31:49 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:31:49 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:31:49 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:31:49 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:31:49 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:31:49 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:31:49 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:31:49 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:31:50 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 110ms (Views: 108.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:31:50 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:31:50 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:31:50 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:31:50 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:31:50 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:31:50 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:31:50 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:31:50 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:31:59 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 247ms (Views: 210.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:32:00 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:32:00 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:32:00 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:32:00 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:32:00 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:32:00 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:32:00 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:32:00 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:33:09 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 105ms (Views: 103.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:33:10 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:33:10 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:33:10 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:33:10 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:33:10 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:33:10 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:33:10 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:33:10 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:33:41 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 237ms (Views: 200.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:33:42 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:33:42 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:33:42 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:33:42 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:33:42 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:33:42 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:33:42 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:33:42 +0700
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2014-10-08 12:33:45 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 103ms (Views: 100.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 12:33:47 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (57.8ms)
+Completed 200 OK in 133ms (Views: 131.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 12:34:09 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 102ms (Views: 101.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:34:09 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:34:09 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:34:09 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:09 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:09 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:10 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:10 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:10 +0700
+
+
+Started POST "/posts" for 127.0.0.1 at 2014-10-08 12:34:13 +0700
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9dQPIDqx6FL/4RxWsSKEtUphv5P6UAebWMQgE8pCRvc=", "post"=>{"title"=>"aaa", "body"=>"aaa"}, "commit"=>"Save Post"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO `posts` (`body`, `created_at`, `title`, `updated_at`) VALUES ('aaa', '2014-10-08 05:34:13', 'aaa', '2014-10-08 05:34:13')
+  [1m[36m (46.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 61ms (ActiveRecord: 49.0ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2014-10-08 12:34:13 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 2 LIMIT 1
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 77ms (Views: 74.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2014-10-08 12:34:13 +0700
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9dQPIDqx6FL/4RxWsSKEtUphv5P6UAebWMQgE8pCRvc=", "post"=>{"title"=>"aaa", "body"=>"aaa"}, "commit"=>"Save Post"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `posts` (`body`, `created_at`, `title`, `updated_at`) VALUES ('aaa', '2014-10-08 05:34:13', 'aaa', '2014-10-08 05:34:13')
+  [1m[36m (52.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 58ms (ActiveRecord: 53.4ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2014-10-08 12:34:13 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 3 LIMIT 1
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 102ms (Views: 99.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:34:13 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:34:13 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:34:13 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:13 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:13 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:13 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:13 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:13 +0700
+
+
+Started POST "/posts" for 127.0.0.1 at 2014-10-08 12:34:18 +0700
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9dQPIDqx6FL/4RxWsSKEtUphv5P6UAebWMQgE8pCRvc=", "post"=>{"title"=>"sacas", "body"=>"ascac"}, "commit"=>"Save Post"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `posts` (`body`, `created_at`, `title`, `updated_at`) VALUES ('ascac', '2014-10-08 05:34:18', 'sacas', '2014-10-08 05:34:18')
+  [1m[36m (61.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 65ms (ActiveRecord: 61.6ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2014-10-08 12:34:18 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 4 LIMIT 1
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 117ms (Views: 114.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:34:18 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:34:18 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:34:18 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:18 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:18 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:18 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:18 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:34:18 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:34:21 +0700
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `posts`[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 107ms (Views: 105.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:35:07 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (55.1ms)
+Completed 200 OK in 242ms (Views: 205.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:35:08 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:35:08 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:35:08 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:35:08 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:35:08 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:35:08 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:35:08 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:35:08 +0700
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:35:15 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:35:15 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:35:15 +0700
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2014-10-08 12:35:31 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 4 LIMIT 1
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 115ms (Views: 112.6ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateComments (20141008053616)
+  [1m[35m (114.7ms)[0m  CREATE TABLE `comments` (`id` int(11) auto_increment PRIMARY KEY, `author` varchar(255), `body` varchar(255), `post_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (192.3ms)[0m  [1mCREATE  INDEX `index_comments_on_post_id`  ON `comments` (`post_id`) [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141008053616')[0m
+  [1m[35m (52.9ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+DEPRECATION WARNING: AbstractController::Helpers::ClassMethods::MissingHelperError is deprecated! Use AbstractController::Helpers::MissingHelperError instead. (called from /home/user/.rvm/gems/ruby-1.9.3-p448/bin/rake:in `call':)
+DEPRECATION WARNING: AbstractController::Helpers::ClassMethods::MissingHelperError is deprecated! Use AbstractController::Helpers::MissingHelperError instead. (called from /home/user/.rvm/gems/ruby-1.9.3-p448/bin/rake:in `call':)
+DEPRECATION WARNING: AbstractController::Helpers::ClassMethods::MissingHelperError is deprecated! Use AbstractController::Helpers::MissingHelperError instead. (called from /home/user/.rvm/gems/ruby-1.9.3-p448/bin/rake:in `call':)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 12:44:24 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 417ms (Views: 315.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:44:26 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:44:26 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:44:26 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:44:26 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:44:26 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:44:26 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 12:44:26 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:44:26 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:44:26 +0700
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2014-10-08 12:44:28 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 4 LIMIT 1
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 4[0m
+  Rendered posts/show.html.erb within layouts/application (211.0ms)
+Completed 200 OK in 293ms (Views: 289.5ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/posts/4/comments" for 127.0.0.1 at 2014-10-08 12:44:38 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9dQPIDqx6FL/4RxWsSKEtUphv5P6UAebWMQgE8pCRvc=", "comment"=>{"author"=>"aku", "body"=>"apa coba"}, "commit"=>"Create Comment", "post_id"=>"4"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 4 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.4ms)[0m  INSERT INTO `comments` (`author`, `body`, `created_at`, `post_id`, `updated_at`) VALUES ('aku', 'apa coba', '2014-10-08 05:44:38', 4, '2014-10-08 05:44:38')
+  [1m[36m (57.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 67ms (ActiveRecord: 61.2ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2014-10-08 12:44:38 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 4 LIMIT 1
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT `comments`.* FROM `comments`  WHERE `comments`.`post_id` = 4[0m
+  Rendered posts/show.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 92ms (Views: 89.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 12:44:38 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 12:44:38 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 12:44:38 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 12:44:38 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 12:44:38 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 12:44:38 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 12:44:38 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 12:44:38 +0700
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-10-08 12:44:54 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 118ms (Views: 116.8ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateAdmins (20141008054542)
+  [1m[35m (114.5ms)[0m  CREATE TABLE `admins` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141008054542')
+  [1m[36m (52.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddIndexToAdminsEmail (20141008054721)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141008054721')[0m
+  [1m[35m (39.6ms)[0m  COMMIT
+Migrating to AddPasswordDigestToAdmins (20141008055344)
+  [1m[36m (235.6ms)[0m  [1mALTER TABLE `admins` ADD `password_digest` varchar(255)[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141008055344')[0m
+  [1m[35m (45.1ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAdmin Exists (0.4ms)[0m  SELECT  1 AS one FROM `admins`  WHERE `admins`.`email` = 'admin@example.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `admins` (`created_at`, `email`, `name`, `password_digest`, `updated_at`) VALUES ('2014-10-08 05:59:39', 'admin@example.com', 'Mr. Admin', '$2a$10$gWYuitQeNMM5WNDIx10NGuDnqKask3tl.xmgN68gdjgKudcp/mjye', '2014-10-08 05:59:39')[0m
+  [1m[35m (67.1ms)[0m  COMMIT
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 13:48:29 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (78.7ms)
+Completed 200 OK in 604ms (Views: 486.2ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 13:48:31 +0700
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 13:48:31 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 13:48:31 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 13:48:31 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 13:48:31 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 13:48:31 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 13:48:31 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 13:48:31 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 13:48:31 +0700
+
+
+Started GET "/posts?page=2" for 127.0.0.1 at 2014-10-08 13:48:36 +0700
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 2[0m
+  Rendered posts/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 131ms (Views: 129.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts?page=1" for 127.0.0.1 at 2014-10-08 13:48:37 +0700
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 122ms (Views: 119.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:04:46 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+SyntaxError (/home/user/RubymineProjects/app/app/controllers/sessions_controller.rb:26: syntax error, unexpected keyword_end, expecting $end):
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/user/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (32.4ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.6ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:05:48 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (78.6ms)
+Completed 200 OK in 383ms (Views: 381.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:05:49 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:05:49 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:05:49 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:05:49 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:05:49 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:05:49 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:05:49 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:05:49 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:05:49 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:05:49 +0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:06:17 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 165ms (Views: 164.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:06:17 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:06:17 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:06:17 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:06:17 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:06:17 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:06:17 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:06:17 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:06:17 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:06:17 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:06:17 +0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:06:59 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 128ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:06:59 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:06:59 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:06:59 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:06:59 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:06:59 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:06:59 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:06:59 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:06:59 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:06:59 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:06:59 +0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:08:53 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 136ms (Views: 135.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:08:53 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:08:53 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:08:53 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:08:53 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:08:53 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:08:53 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:08:53 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:08:53 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:08:53 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:08:53 +0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:09:26 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 134ms (Views: 132.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:09:26 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:09:26 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:09:26 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:09:26 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:09:26 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:09:26 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:09:26 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:09:26 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:09:26 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:09:26 +0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:10:05 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 129ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:10:06 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:10:06 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:10:06 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:10:06 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:10:06 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:10:06 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:10:06 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:10:06 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:10:06 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:10:06 +0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:10:50 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 127ms (Views: 125.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:10:51 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:10:51 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:10:51 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:10:51 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:10:51 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:10:51 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:10:51 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:10:51 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:10:51 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:10:51 +0700
+
+
+Started GET "/posts/" for 127.0.0.1 at 2014-10-08 14:11:40 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 159ms (Views: 142.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:11:40 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:11:40 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:11:40 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:11:40 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:11:40 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:11:40 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:11:40 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:11:40 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:11:40 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:11:40 +0700
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 14:11:44 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 153ms (Views: 152.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/" for 127.0.0.1 at 2014-10-08 14:11:53 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 138ms (Views: 136.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:11:54 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 131ms (Views: 129.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:11:54 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:11:54 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:11:54 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:11:54 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:11:54 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:11:54 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:11:54 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:11:54 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:11:54 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:11:54 +0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:12:09 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 133ms (Views: 131.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:09 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:09 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:09 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:09 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:09 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:09 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:09 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:09 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:09 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:09 +0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:12:28 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 136ms (Views: 135.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:28 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:28 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:28 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:28 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:28 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:28 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:28 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:28 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:28 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:28 +0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:12:29 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 128ms (Views: 127.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:29 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:29 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:29 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:29 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:29 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:29 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:29 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:29 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:29 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:29 +0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:12:38 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (80.9ms)
+Completed 200 OK in 312ms (Views: 252.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:39 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:39 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:39 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:39 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:39 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:39 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:39 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:39 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:39 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:39 +0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:12:50 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 141ms (Views: 139.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:50 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:51 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:12:51 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:51 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:51 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:51 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:51 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:51 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:51 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:12:51 +0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:13:00 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 140ms (Views: 139.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:13:01 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:13:01 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:13:01 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:13:01 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:13:01 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:13:01 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:13:01 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:13:01 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:13:01 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:13:01 +0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 14:13:16 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 134ms (Views: 132.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 14:13:16 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 14:13:16 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 14:13:16 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 14:13:16 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 14:13:16 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 14:13:16 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 14:13:16 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 14:13:16 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 14:13:16 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 14:13:16 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddRememberTokenToAdmins (20141008071850)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddRememberTokenToAdmins (20141008071850)
+  [1m[35m (342.6ms)[0m  ALTER TABLE `admins` ADD `remember_token` varchar(255)
+  [1m[36m (217.0ms)[0m  [1mCREATE  INDEX `index_admins_on_remember_token`  ON `admins` (`remember_token`) [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141008071850')[0m
+  [1m[35m (66.7ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:06:13 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (27.2ms)
+  [1m[35mAdmin Load (5.3ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Completed 200 OK in 408ms (Views: 322.6ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:14 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:14 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:14 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:14 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:14 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:15 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:15 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:15 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:15 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:15 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:06:17 +0700
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `posts`[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Completed 200 OK in 126ms (Views: 122.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:17 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:17 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:17 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:17 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:17 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:17 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:17 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:17 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:17 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:17 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:06:18 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (7.5ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Completed 200 OK in 110ms (Views: 108.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:18 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:18 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:18 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:18 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:18 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:18 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:18 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:18 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:18 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:18 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:06:19 +0700
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `posts`[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (8.1ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Completed 200 OK in 114ms (Views: 111.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:19 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:19 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:19 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:19 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:19 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:19 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:19 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:19 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:19 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:19 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:06:19 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (7.1ms)
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Completed 200 OK in 126ms (Views: 123.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:20 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:20 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:06:20 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:20 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:20 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:20 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:20 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:20 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:20 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:06:20 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:07:16 +0700
+
+ActionController::RoutingError (undefined local variable or method `cookies' for ApplicationController:Class):
+  app/controllers/application_controller.rb:6:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/posts_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (71.1ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (172.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:07:38 +0700
+Processing by PostsController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+SystemStackError (stack level too deep):
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:79
+
+
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/user/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:07:48 +0700
+Processing by PostsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `posts`[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (15.9ms)
+  [1m[36mAdmin Load (0.1ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Completed 200 OK in 149ms (Views: 140.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:07:48 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:07:48 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:07:48 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:07:48 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:07:48 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:07:48 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:07:48 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:07:48 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:07:48 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:07:48 +0700
+
+
+Started GET "/posts?page=2" for 127.0.0.1 at 2014-10-08 15:08:49 +0700
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (1.0ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 2[0m
+  Rendered posts/index.html.erb within layouts/application (10.7ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Completed 200 OK in 145ms (Views: 142.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts?page=1" for 127.0.0.1 at 2014-10-08 15:08:53 +0700
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts`[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (6.1ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Completed 200 OK in 107ms (Views: 105.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-10-08 15:08:55 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (8.2ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Completed 200 OK in 139ms (Views: 137.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/" for 127.0.0.1 at 2014-10-08 15:19:24 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PostsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (57.8ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Completed 200 OK in 813ms (Views: 766.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:19:26 +0700
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-10-08 15:21:00 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (57.1ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Completed 200 OK in 259ms (Views: 257.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-10-08 15:21:04 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Completed 200 OK in 209ms (Views: 207.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-10-08 15:21:08 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Completed 200 OK in 249ms (Views: 248.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-10-08 15:21:45 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DzjA43MNoQzJeERMhDEG6Whsj88TQ5bq3voN9xcZQJY=", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Masuk"}
+  [1m[35mAdmin Load (0.4ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`email` = 'admin@example.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (20.1ms)[0m  UPDATE `admins` SET `remember_token` = '4ff56c25d050aef25c1a67c4e19238d7149c1daa', `updated_at` = '2014-10-08 08:21:45' WHERE `admins`.`id` = 1
+  [1m[36m (67.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 218ms (ActiveRecord: 87.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:21:45 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (6.4ms)
+  [1m[35mAdmin Load (0.5ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = '4ff56c25d050aef25c1a67c4e19238d7149c1daa' LIMIT 1
+Completed 200 OK in 247ms (Views: 245.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:21:46 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:21:46 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:21:46 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:21:46 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:21:46 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:21:46 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:21:46 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:21:46 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:21:46 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:21:46 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:21:46 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:26:06 +0700
+Processing by PostsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `posts`[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (8.9ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = '4ff56c25d050aef25c1a67c4e19238d7149c1daa' LIMIT 1[0m
+Completed 200 OK in 224ms (Views: 222.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:26:06 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:07 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:26:09 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (6.3ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = '4ff56c25d050aef25c1a67c4e19238d7149c1daa' LIMIT 1
+Completed 200 OK in 218ms (Views: 216.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:10 +0700
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-10-08 15:26:13 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DzjA43MNoQzJeERMhDEG6Whsj88TQ5bq3voN9xcZQJY="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:26:13 +0700
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts`[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (7.4ms)
+  [1m[36mAdmin Load (0.4ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Completed 200 OK in 229ms (Views: 226.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:26:14 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:38:17 +0700
+Processing by PostsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (8.5ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Completed 200 OK in 226ms (Views: 223.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:38:18 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+Processing by PostsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `posts`[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0
+  Rendered posts/index.html.erb within layouts/application (9.6ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Completed 200 OK in 225ms (Views: 222.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:40:26 +0700
+
+
+Started GET "/signin" for 127.0.0.1 at 2014-10-08 15:40:27 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Completed 200 OK in 212ms (Views: 211.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:45:41 +0700
+Processing by PostsController#index as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:41 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:41 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:41 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:41 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (1.5ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:41 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:41 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:41 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:41 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:41 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (2.0ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (1.8ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (2.4ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.9ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:42 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:45:47 +0700
+Processing by SessionsController#new as HTML
+  [1m[36mAdmin Load (0.1ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+  [1m[35mAdmin Load (0.1ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Completed 200 OK in 234ms (Views: 231.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:18 +0700
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Completed 200 OK in 229ms (Views: 227.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:22 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:46:24 +0700
+Processing by PostsController#index as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:46:24 +0700
+Processing by PostsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:46:24 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Completed 200 OK in 226ms (Views: 224.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:24 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:25 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:46:27 +0700
+Processing by PostsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:46:27 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Completed 200 OK in 224ms (Views: 222.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:27 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:27 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:28 +0700
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-10-08 15:46:54 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DzjA43MNoQzJeERMhDEG6Whsj88TQ5bq3voN9xcZQJY=", "session"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Masuk"}
+  [1m[36mAdmin Load (0.5ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`email` = 'admin@example.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `admins` SET `remember_token` = 'd8e46913d84f2c7ffa54ae5bf8a9ec71117c652a', `updated_at` = '2014-10-08 08:46:54' WHERE `admins`.`id` = 1[0m
+  [1m[35m (49.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 177ms (ActiveRecord: 51.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:46:54 +0700
+Processing by PostsController#index as HTML
+  [1m[36mAdmin Load (0.4ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'd8e46913d84f2c7ffa54ae5bf8a9ec71117c652a' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY created_at DESC LIMIT 2 OFFSET 0[0m
+  Rendered posts/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 280ms (Views: 270.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:46:55 +0700
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2014-10-08 15:47:46 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DzjA43MNoQzJeERMhDEG6Whsj88TQ5bq3voN9xcZQJY="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:47:46 +0700
+Processing by PostsController#index as HTML
+  [1m[35mAdmin Load (0.4ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:47:46 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Completed 200 OK in 251ms (Views: 249.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:47:46 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:47:46 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:47:46 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:46 +0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:46 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:46 +0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:46 +0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:46 +0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:46 +0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:46 +0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:46 +0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:47 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:47 +0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:47 +0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:47 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:47 +0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:47 +0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:47 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:47 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:47 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:47 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:47 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:47 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:47:47 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:59:53 +0700
+Processing by PostsController#index as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:59:53 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Completed 200 OK in 265ms (Views: 264.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:59:53 +0700
+Processing by PostsController#index as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:59:53 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Completed 200 OK in 225ms (Views: 224.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/twitter/bootstrap.css?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/custom.less.css?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-08 15:59:54 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-08 15:59:57 +0700
+Processing by PostsController#index as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+Redirected to http://localhost:3000/sessions/new
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-10-08 15:59:58 +0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  `admins`.* FROM `admins`  WHERE `admins`.`remember_token` = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1[0m
+Completed 200 OK in 222ms (Views: 220.9ms | ActiveRecord: 0.2ms)

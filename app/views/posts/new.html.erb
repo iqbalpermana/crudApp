@@ -1,0 +1,15 @@
+<h1>Posts#new</h1>
+<table border="0">
+<%= form_for :post, url: posts_path do |f| %>
+
+    <tr><td><%= f.label :Judul %></td></tr>
+    <tr><td><%= f.text_field :title %>   </td></tr>
+
+
+    <tr><td> <%= f.label :Isi %>  </td></tr>
+    <tr><td><%= f.text_area :body %> </td></tr>
+    <tr><td>
+    <%= f.submit %>   </td></tr>
+
+<% end %>
+</table>
