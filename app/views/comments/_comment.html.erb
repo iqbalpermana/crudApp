@@ -1,0 +1,15 @@
+<p>
+  <strong><%= comment.author %>
+  </strong>
+  <small><%= l comment.created_at, format: :long %></small> <br />
+  <%= comment.body %>
+    <br /><br />
+    <small>
+      <%= check_box_tag "comments[]", comment.id %>
+      <%= link_to "hapus",
+                  [comment.post, comment],
+                  method: :delete,
+                  data: {
+                    confirm: "Yakin mau menghapus komentar ini?" } %>
+    </small>
+</p>

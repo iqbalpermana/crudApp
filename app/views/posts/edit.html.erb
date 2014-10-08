@@ -1,0 +1,31 @@
+<h2>Ubah Artikel</h2>
+<!--
+<%= form_for :post, url: post_path(@post), method: :patch do |f| %>
+  <% if @post.errors.any? %>
+    <div class= "alert alert-block alert-error" id="error_explanation">
+      Terdapat <%= @post.errors.count %> kesalahan:
+      <ul>
+        <% @post.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <p>
+    <%= f.label :judul %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :isi %><br>
+    <%= f.text_area :body %>
+  </p>
+
+  <p><input type="submit" value="Edit Post"></p>
+ <!-- <p>
+    <%= f.submit %>
+  </p>-->
+<% end %>
+
+<%= render "form" %>
+<%= link_to 'Depan', posts_path %>

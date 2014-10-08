@@ -7,7 +7,9 @@
 <ul class="posts">
   <% @posts.each do |post| %>
     <h5><div class="title"><%= link_to post.title, post%></div>
-      <em><small><%= l post.created_at, format: :short %></small></em></h5>
+      <em><small><%= l post.created_at, format: :short %>
+      <%= link_to "ubah", edit_post_url(post) %>
+      </small></em></h5>
     <div class="body"><%= post.body %></div>
     <hr>
   <% end %>

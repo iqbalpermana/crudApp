@@ -4,16 +4,24 @@
 </p>
 
 <!-- komentar -->
-
+<br><br><br>
 <h4>Komentar</h4>
-<% @post.comments.each do |comment| %>
-  <p>
-    <strong><%= comment.author %>
-    </strong>
-    <small><%= l comment.created_at, format: :long %></small> <br />
-    <%= comment.body %>
-  </p>
+<% if @post.comments.empty? %>
+  <p><em> Belum ada komentar </em></p>
 <% end %>
+
+<%= form_tag destroy_multiple_post_comments_path(@post), method: :delete do %>
+
+    <%= render @post.comments %>
+
+  <p><%= submit_tag "Hapus komentar terpilih",
+                    data: {
+                      confirm: "Hapus komentar terpilih?" } %>
+  </p>
+
+
+<% end %>
+
 <hr>
 
 <h4>Tambahkan komentar:</h4>

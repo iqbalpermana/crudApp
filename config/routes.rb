@@ -2,7 +2,11 @@ Rails.application.routes.draw do
   get 'posts/new'
 
   resources :posts do
-    resources :comments
+    resources :comments do
+      collection do
+        delete 'destroy_multiple'
+      end
+    end
   end
   resources :sessions, only: [:new, :create, :destroy]
   root to:"posts#index"
